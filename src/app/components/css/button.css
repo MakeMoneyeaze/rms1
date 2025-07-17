@@ -1,0 +1,38 @@
+button {
+  padding: 10px 24px;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--foreground);
+  background: var(--primary);
+  border: none;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.06);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.1s;
+  outline: none;
+}
+
+button:hover, button:focus {
+  background: var(--primary-dark);
+  color: #fff;
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.10);
+  transform: translateY(-2px) scale(1.03);
+}
+
+button:active {
+  background: var(--secondary);
+  color: var(--foreground);
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.08);
+  transform: scale(0.98);
+}
+
+/* Secondary button style */
+button.secondary {
+  background: var(--secondary);
+  color: var(--foreground);
+}
+
+button.secondary:hover, button.secondary:focus {
+  background: var(--primary);
+  color: #fff;
+}
